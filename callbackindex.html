@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>SolusiSeller Auth</title></head>
+<body>
+  <h2>Authorization Code:</h2>
+  <p id="c" style="font-family:monospace;font-size:14px;word-break:break-all"></p>
+  <script>
+    const code = new URLSearchParams(location.search).get('code');
+    document.getElementById('c').textContent = code || 'No code received.';
+  </script>
+</body>
+</html>
